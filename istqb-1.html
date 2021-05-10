@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport min-width=375px" content="min-width=375, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>SeriousTester</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+<header>
+    <div class="header container">
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col-auto align-self-center"><a class="header__logo" href="/"></a></div>
+                    <div class="col-auto align-self-center"><div class="header__lamp" data-target="modal--idea" data-toggle="modal"></div></div>
+                </div>
+            </div>
+            <div class="col-auto align-self-center">
+                <div class="row">
+                    <div class="col-auto align-self-center header__padding-sm"><div class="header__theme-color"><span></span></div></div>
+                    <div class="col-auto align-self-center header__padding-sm"><a class="header__telegram" href="#"></a></div>
+                    <div class="col-auto align-self-center header__hide-md"><a class="header__login" href="#">Войти</a></div>
+                    <div class="col-auto align-self-center header__hide-md"><a class="header__register" href="#">Регистрация</a></div>
+                    <div class="col-auto align-self-center header__show-md header__padding-sm"><a class="header__profile" href="#"></a></div>
+                    <div class="col-auto align-self-center header__padding-sm"><a class="header__menu" id="menu" href="#"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="padding">
+    <section class="istqb">
+        <div class="container">
+            <div class="header-img">
+                <h1 class="h2-like">ISTQB тренажер</h1>
+            </div>
+            <div class="row istqb__subtitle">
+                <div class="col-auto">
+                    <div class="btn btn--auto btn--hollow" id="en-ru">
+                        <span>
+                            <span class="span1">EN</span>
+                            <span class="span2">RU</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-auto px-0">
+                    <div class="btn btn--auto btn--hollow" id="use-random">
+                        <span>
+                            <span class="span1">В случайном порядке</span>
+                            <span class="span2">Вопросы по порядку</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="istqb__question-search__wrapper">
+                        <input class="istqb__question-search__input" type="text" id="name" name="name" placeholder="№ Вопроса" value="">
+                        <span class="istqb__question-search__button"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="istqb__block-1">
+                <p><strong>Вопрос № 876</strong></p>
+                <p>В следующей таблице показаны 6 процедур тестирования (от P до U), которые теперь необходимо ввести в расписание выполнения теста.</p>
+                <p>Бизнес-приоритет рассматривается как наиболее важный элемент при определении последовательности процедур тестирования, но необходимо также учитывать и другие зависимости. Регрессионное тестирование можно выполнить только после завершения всех остальных тестов.</p>
+                <p>Что из следующего представляет собой наиболее эффективную последовательность для расписания выполнения теста (если первая запись в последовательности является первой процедурой, которую необходимо выполнить, вторая запись является второй и т. д.)?</p>
+                <div class="istqb__modal-image__wrapper">
+                    <div class="istqb__modal-image" data-target="modal--image" data-toggle="modal" data-image="images/istqb-big.jpg">
+                        <img src="images/istqb-big.jpg">
+                    </div>
+                </div>
+                <div class="istqb__modal-image__wrapper">
+                    <div class="istqb__big-image">
+                        <img src="images/istqb-big.jpg">
+                    </div>
+                </div>
+                <div class="istqb__radio istqb__top-padding">
+                    <input id="radio1" type="radio" name="numbers" value="first">
+                    <label for="radio1">R, Q, S, T, U, P</label>
+                </div>
+                <div class="istqb__radio">
+                    <input id="radio2" type="radio" name="numbers" value="first">
+                    <label for="radio2">S, R, P, U, Q, T</label>
+                </div>
+                <div class="istqb__radio">
+                    <input id="radio3" type="radio" name="numbers" value="first">
+                    <label for="radio3">Q, R, S, T, P, U</label>
+                </div>
+                <div class="istqb__radio">
+                    <input id="radio4" type="radio" name="numbers" value="first">
+                    <label for="radio4">S, R, U, P, Q, T</label>
+                    <span class="istqb__correct-answer"> - Правильный ответ</span>
+                </div>
+                <div class="row istqb__top-padding">
+                    <div class="col-auto col-md">
+                        <div class="btn btn--big is-disabled"><span>Проверить ответ</span></div>
+                    </div>
+                    <div class="col-auto ml-auto justify-content-right istqb__top-md">
+                        <a href="#" class="btn btn--big btn--hollow"><span>Пройти экзамен</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<section class="cookies">
+    <div class="container">
+        <div class="row">
+            <div class="col-auto align-self-center d-none d-md-block"><img src="images/i-cookies.svg"></div>
+            <div class="col-12 col-md align-self-center cookies__text">Этот сайт использует файлы cookie для хранения данных. Продолжая использовать сайт, вы даете свое согласие на работы с этими файлами.</div>
+            <div class="col-12 col-md-auto align-self-center"><a href="#" class="btn btn--big d-inline-block"><span>Принять</span></a></div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer container">
+        <div class="row">
+            <div class="col-md-4 col-lg-3">
+                <div><a class="footer__logo" href="/"></a></div>
+                <p class="font-size-12 footer__copyrights">&copy; 2021 Серьёзный тестировщик</p>
+                <div class="footer__login">
+                    <a href="#" class="btn"><span>Регистрация</span></a>
+                    <a href="#" class="btn btn--hollow"><span>Вход</span></a>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-9 mt">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 order-0 mb-0 mb-md links-block links-gradient">
+                        <p class="font-weight-600">Сервисы:</p>
+                        <a href="#">Парный генератор</a>
+                        <a href="#">Генератор данных</a>
+                        <a href="#">Генератор GUID</a>
+                        <a href="#">Генератор случайного теста</a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-auto order-1 links-block links-gradient">
+                        <a href="#">Конвертер регистра</a>
+                        <a href="#">Генератор случайных файлов</a>
+                        <a href="#">Генератор изображений</a>
+                        <a href="#">Компаратор данных</a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 order-4 order-lg-2">
+                        <p class="font-weight-600">Обратная связь:</p>
+                        <div><a href="#" class="footer__telegram"></a><a href="#" class="footer__email"></a></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb order-2 order-lg-3 links-block links-gradient pt-xl">
+                        <a href="#" class="font-weight-600">Теория тестирования</a>
+                        <a href="#" class="font-weight-600">Публикации</a>
+                        <a href="#" class="font-weight-600">ISTQB тренажер</a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb order-3 order-lg-4 links-block links-gradient pt-xl">
+                        <a href="#">Политика конфиденциальности</a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 order-md-6 order-5 order-lg-5 pt-xl">
+                        <p class="font-weight-600">Телеграм-канал</p>
+                        <div><a href="#" class="footer__telegram-channel"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<aside>
+    <div class="container position-relative">
+    <div class="aside-close" id="menu-close"></div>
+    <div class="header-img">
+        <div class="h2-like"><a href="services.html">Сервисы</a></div>
+        <img src="images/icon-services.svg">
+    </div>
+    <div class="services-block">
+    <nav class="services__menu">
+    <ul>
+        <li class="@@sel1"><span><a data-hint="Pairwise generator" class="services__icon1" href="service-1.html"><span></span></a></li>
+        <li class="@@sel2"><a data-hint="Data generator" class="services__icon2" href="service-2.html"><span></span></a></li>
+        <li class="@@sel3"><a data-hint="GUID generator" class="services__icon3" href="service-3.html"><span></span></a></li>
+        <li class="@@sel4"><a data-hint="Random text generator" class="services__icon4" href="service-4.html"><span></span></a></li>
+        <li class="@@sel5"><a data-hint="Case converter" class="services__icon5" href="service-5.html"><span></span></a></li>
+        <li class="@@sel6"><a data-hint="Image generator" class="services__icon6" href="service-6.html"><span></span></a></li>
+        <li class="@@sel7"><a data-hint="Data comparer" class="services__icon7" href="service-7.html"><span></span></a></li>
+        <li class="@@sel8"><a data-hint="Random file generator" class="services__icon8" href="service-8.html"><span></span></a></li>
+    </ul>
+</nav>
+    </div>
+    <div class="header-img">
+        <div class="h2-like"><a href="publications.html">Публикации</a></div>
+        <img src="images/icon-publications.svg">
+    </div>
+    <div class="header-img aside-header-1">
+        <div class="h2-like"><a href="istqb.html">ISTQB тренажер</a></div>
+        <img src="images/icon-istqb.svg">
+    </div>
+    <div class="header-img aside-header-2">
+        <div class="h2-like"><a href="theory.html">Теория тестирования</a></div>
+        <img src="images/icon-testing.svg">
+    </div>
+    <div class="aside__sign"><a href="#"></a></div>
+</div>
+</aside>
+<!-- Модальные окна -->
+<div id="modal--password" class="modal is-animated">
+    <div class="modal-wrapper modal-window">
+        <div class="modal-main">
+            <div class="modal--close" data-dismiss="modal"></div>
+            <div class="modal--header">
+                <h2>Восстановить пароль</h2>
+            </div>
+            <div class="modal--content">
+                <form action="/action_page.php" target="_blank">
+                    <input class="mb error" type="text" id="email" name="email" placeholder="E-mail" value="">
+                    <span class="error">Неверный e-mail</span>
+                    <button class="btn btn--big" type="submit"><span>Отправить</span></button>
+                </form>
+                <div class="divider"></div>
+                <div class="font-size-16"><span class="link" data-dismiss="modal" data-target="modal--signin" data-toggle="modal">Войти</span> или <span class="link" data-dismiss="modal" data-target="modal--signup" data-toggle="modal">зарегистрироваться</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Модальные окна -->
+<div id="modal--signin" class="modal is-animated">
+    <div class="modal-wrapper modal-window">
+        <div class="modal-main">
+            <div class="modal--close" data-dismiss="modal"></div>
+            <div class="modal--header">
+                <h2>Вход</h2>
+            </div>
+            <div class="modal--content">
+                <form action="/action_page.php" target="_blank">
+                    <div class="mb">Ещё нет аккаунта? <span class="link" data-dismiss="modal" data-target="modal--signup" data-toggle="modal">Зарегистрируйтесь</span></div>
+                    <input class="mb" type="text" id="email" name="email" placeholder="E-mail" value="">
+                    <input class="" type="password" id="password" name="password" placeholder="Пароль" value="">
+                    <div class="mb mt3"><span class="link" data-dismiss="modal" data-target="modal--password" data-toggle="modal">Забыли пароль?</span></div>
+                    <button class="btn btn--big" type="submit"><span>Вход</span></button>
+                </form>
+                <div class="divider"></div>
+                <div class="font-size-16">Или войдите с помощью</div>
+                <div class="socials">
+                    <a href="#" class="fb"></a>
+                    <a href="#" class="vk"></a>
+                    <a href="#" class="tw"></a>
+                    <a href="#" class="gl"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Модальные окна -->
+<div id="modal--signup" class="modal is-animated">
+    <div class="modal-wrapper modal-window">
+        <div class="modal-main">
+            <div class="modal--close" data-dismiss="modal"></div>
+            <div class="modal--header">
+                <h2>Регистрация</h2>
+            </div>
+            <div class="modal--content">
+                <form action="/action_page.php" target="_blank">
+                    <div class="mb">Уже зарегистрированы? <span class="link" data-dismiss="modal" data-target="modal--signin" data-toggle="modal">Войдите</span></div>
+                    <input class="mb" type="text" id="email" name="email" placeholder="E-mail" value="">
+                    <input class="mb" type="text" id="name" name="name" placeholder="Имя" value="">
+                    <input class="mb" type="password" id="password" name="password" placeholder="Пароль" value="">
+                    <input class="mb" type="password" id="confirmpassword" name="confirmpassword" placeholder="Повторите пароль" value="">
+                    <button class="btn btn--big" type="submit"><span>Зарегистрироваться</span></button>
+                </form>
+                <p class="mt2 font-size-16 color-grey links-gradient">Нажимая на кнопку, вы соглашаетесь c<br><a href="policy.html">политикой конфиденциальности</a></p>
+                <div class="divider"></div>
+                <div class="font-size-16">Или войдите с помощью</div>
+                <div class="socials">
+                    <a href="#" class="fb"></a>
+                    <a href="#" class="vk"></a>
+                    <a href="#" class="tw"></a>
+                    <a href="#" class="gl"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Модальные окна -->
+<div id="modal--idea" class="modal is-animated">
+    <div class="modal-wrapper modal-window">
+        <div class="modal-main">
+            <div class="modal--close" data-dismiss="modal"></div>
+            <div class="modal--header">
+                <h2>Есть предложение?<br>Отправьте нам</h2>
+            </div>
+            <div class="modal--content">
+                <form action="/action_page.php" target="_blank">
+                    <input class="mb" type="text" id="name" name="name" placeholder="Имя" value="">
+                    <input class="mb" type="text" id="email" name="email" placeholder="E-mail" value="">
+                    <textarea class="mb" id="comment" name="comment" placeholder="Ваше предложение" value=""></textarea>
+                    <button class="btn btn--big" type="submit"><span>Отправить</span></button>
+                </form>
+                <p class="mt2 font-size-16 color-grey links-gradient">Нажимая на кнопку, вы соглашаетесь<br>c <a href="policy.html">политикой конфиденциальности</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Модальные окна -->
+<div id="modal--image" class="modal is-animated">
+    <div class="modal-wrapper modal-window">
+        <div class="modal-main">
+            <div class="modal--close" data-dismiss="modal"></div>
+            <div class="modal--content">
+                <img id="modal__loading-image" src="">
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    //var element = document.getElementsByTagName('body')[0];
+    //element.classList.toggle("is-dark");
+
+    document.addEventListener('click', function (e) {
+
+        e = e || window.event;
+        var target = e.target || e.srcElement;
+
+        if (target.classList.contains('header__theme-color')) {
+            var element = document.getElementsByTagName('body')[0];
+            element.classList.toggle("is-dark");
+        }
+
+        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+        if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') || target.classList.contains('modal')) {
+            var modal = document.querySelectorAll('[class="modal is-animated open"]');
+            modal.forEach(function(modals) {
+                modals.classList.remove('open');
+            });
+            e.preventDefault();
+        }
+
+        if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') {
+            if (target.hasAttribute('data-image')) {
+                var imgsrc = target.getAttribute('data-image');
+                document.getElementById("modal__loading-image").src = imgsrc;
+            }
+            if (target.hasAttribute('data-target')) {
+                var m_ID = target.getAttribute('data-target');
+                document.getElementById(m_ID).classList.add('open');
+
+                e.preventDefault();
+            }
+        }
+
+    }, false);
+
+    // Custom Select
+
+    document.addEventListener('DOMContentLoaded', createSelect, false);
+    function createSelect() {
+        var select = document.getElementsByTagName('select'),
+            liElement,
+            ulElement,
+            optionValue,
+            iElement,
+            optionText,
+            selectDropdown,
+            elementParentSpan;
+
+        for (var select_i = 0, len = select.length; select_i < len; select_i++) {
+            //console.log('selects init');
+
+            select[select_i].style.display = 'none';
+            wrapElement(document.getElementById(select[select_i].id), document.createElement('div'), select_i, select[select_i].getAttribute('placeholder-text'));
+
+            for (var i = 0; i < select[select_i].options.length; i++) {
+                liElement = document.createElement("li");
+                optionValue = select[select_i].options[i].value;
+                optionText = document.createTextNode(select[select_i].options[i].text);
+                if (optionValue!=0) {liElement.className = 'select-dropdown__list-item';}
+                else {liElement.className = 'select-dropdown__list-item-group';}
+                liElement.setAttribute('data-value', optionValue);
+                liElement.appendChild(optionText);
+                ulElement.appendChild(liElement);
+
+                liElement.addEventListener('click', function () {
+                    displyUl(this);
+                }, false);
+            }
+        }
+        function wrapElement(el, wrapper, i, placeholder) {
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+
+            document.addEventListener('click', function (e) {
+                let clickInside = wrapper.contains(e.target);
+                if (!clickInside) {
+                    let menu = wrapper.getElementsByClassName('select-dropdown__list');
+                    menu[0].classList.remove('active');
+                    let menu2 = wrapper.getElementsByClassName('select-dropdown__button');
+                    menu2[0].classList.remove('active');
+                }
+            });
+
+            var buttonElement = document.createElement("button"),
+                spanElement = document.createElement("span"),
+                spanText = document.createTextNode(placeholder);
+            iElement = document.createElement("i");
+            ulElement = document.createElement("ul");
+
+            wrapper.className = 'select-dropdown select-dropdown--' + i;
+            buttonElement.className = 'select-dropdown__button select-dropdown__button--' + i;
+            buttonElement.setAttribute('data-value', '');
+            buttonElement.setAttribute('type', 'button');
+            spanElement.className = 'select-dropdown select-dropdown--' + i;
+            iElement.className = 'zmdi zmdi-chevron-down';
+            ulElement.className = 'select-dropdown__list select-dropdown__list--' + i;
+            ulElement.id = 'select-dropdown__list-' + i;
+
+            wrapper.appendChild(buttonElement);
+            spanElement.appendChild(spanText);
+            buttonElement.appendChild(spanElement);
+            buttonElement.appendChild(iElement);
+            wrapper.appendChild(ulElement);
+        }
+
+        function displyUl(element) {
+
+            if (element.tagName == 'BUTTON') {
+                selectDropdown = element.parentNode.getElementsByTagName('ul');
+                selectDropdown2 = element.parentNode.getElementsByTagName('button');
+                //var labelWrapper = document.getElementsByClassName('js-label-wrapper');
+                for (var i = 0, len = selectDropdown.length; i < len; i++) {
+                    selectDropdown[i].classList.toggle("active");
+                    selectDropdown2[i].classList.toggle("active");
+                    //var parentNode = $(selectDropdown[i]).closest('.js-label-wrapper');
+                    //parentNode[0].classList.toggle("active");
+                }
+            } else if (element.tagName == 'LI') {
+                selectDropdown2[0].classList.toggle("active");
+                var selectId = element.parentNode.parentNode.getElementsByTagName('select')[0];
+                selectElement(selectId.id, element.getAttribute('data-value'));
+                elementParentSpan = element.parentNode.parentNode.getElementsByTagName('span');
+                element.parentNode.classList.toggle("active");
+                elementParentSpan[0].textContent = element.textContent;
+                elementParentSpan[0].parentNode.setAttribute('data-value', element.getAttribute('data-value'));
+            }
+
+        }
+        function selectElement(id, valueToSelect) {
+            var element = document.getElementById(id);
+            element.value = valueToSelect;
+            element.setAttribute('selected', 'selected');
+        }
+        var buttonSelect = document.getElementsByClassName('select-dropdown__button');
+        for (var i = 0, len = buttonSelect.length; i < len; i++) {
+            buttonSelect[i].addEventListener('click', function (e) {
+                e.preventDefault();
+                displyUl(this);
+            }, false);
+        }
+    }
+
+    // Переключение кнопки "В случайном порядке"
+    var userandom = document.getElementById('use-random');
+    if (userandom !== null) {
+        userandom.addEventListener('click', function (e) {
+            userandom.classList.toggle("is-active");
+        }, false);
+    }
+    // Переключение кнопки "EN RU"
+    var enru = document.getElementById('en-ru');
+    if (enru !== null) {
+        enru.addEventListener('click', function (e) {
+            enru.classList.toggle("is-active");
+        }, false);
+    }
+    // Переключение кнопки "Show conditions"
+    var showconditions = document.getElementById('show-conditions');
+    var showconditionsblock = document.getElementsByClassName('pairwise__show-conditions')[0];
+    if (showconditions !== null) {
+        showconditions.addEventListener('click', function (e) {
+            showconditions.classList.toggle("is-active");
+            showconditionsblock.classList.toggle("is-active");
+        }, false);
+    }
+    // Переключение кнопки "Во весь экран" в сервисах
+    var resizebut = document.getElementById('resize');
+    if (resizebut !== null) {
+        resizebut.addEventListener('click', function (e) {
+            resizeblock = document.getElementsByClassName('services__service-block')[0];
+            resizeblock.classList.toggle("is-fullscreen");
+        }, false);
+    }
+    // Выпадающий Background color picker
+    var backclr = document.getElementById('back-color');
+    if (backclr !== null) {
+        backclr.addEventListener('click', function (e) {
+            backclr.classList.toggle("is-active");
+        }, false);
+    }
+    // Выпадающий color picker
+    var clr = document.getElementById('color');
+    if (clr !== null) {
+        clr.addEventListener('click', function (e) {
+            clr.classList.toggle("is-active");
+        }, false);
+    }
+    // Переключение кнопки "Меню"
+    var menubtn = document.getElementById('menu');
+    if (menubtn !== null) {
+        menubtn.addEventListener('click', function (e) {
+            menubtn.classList.toggle("is-active");
+            document.getElementsByTagName('aside')[0].classList.toggle("is-active");
+        }, false);
+        var menuclose = document.getElementById('menu-close');
+        menuclose.addEventListener('click', function (e) {
+            menubtn.classList.toggle("is-active");
+            document.getElementsByTagName('aside')[0].classList.toggle("is-active");
+        }, false);
+    }
+    // Переключение Cookies
+    cookies = document.getElementsByClassName('cookies')[0];
+    cookies.classList.toggle("is-active");
+    var cookiesbut = document.getElementsByClassName('.cookies .btn-big')[0];
+    if (cookiesbut !== null) {
+        cookies.addEventListener('click', function (e) {
+            cookies.classList.toggle("is-active");
+        }, false);
+    }
+
+</script>
+
+</body>
+</html>
